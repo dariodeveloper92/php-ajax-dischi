@@ -15,6 +15,7 @@
 ?>
 
 <body>
+    <!-- header -->
     <header>
         <div id="container-header">
             <div class="logoSpotify">
@@ -24,15 +25,19 @@
             </div>
         </div>
     </header>
+    <!-- main -->
     <main>
         <section id="container-main">
             <div class="dischi">
                 <?php 
+                    /*importo i dischi dal database */ 
                     foreach($db as $key => $disc) {
-                        echo '<img src=' . $disc['poster'] .'>' ;
-                        echo '<h2>' . 'title: ' . $disc['title'] . ':'  . '</h2>';
-                        echo '<h4>' . 'author: ' . $disc['author'] . ':'  . '</h4>';
-                        echo '<h5>' . 'year: ' . $disc['year'] . ':'  . '</h5>';
+                        echo"<div class='dischi'>";
+                            echo '<img src=' . $disc['poster'] .'>' ;
+                            echo '<h2>' . 'title: ' . $disc['title'] . ':'  . '</h2>';
+                            echo '<h4>' . 'author: ' . $disc['author'] . ':'  . '</h4>';
+                            echo '<h5>' . 'year: ' . $disc['year'] . ':'  . '</h5>';
+                        echo "</div>";
                     }
                 ?>
             </div>
