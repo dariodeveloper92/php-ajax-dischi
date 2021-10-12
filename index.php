@@ -9,18 +9,6 @@
 </head>
 
 <body>
-
-    <?php 
-    /* import database */
-    include __DIR__ . '/database.php';
-
-    //ciclo for
-    for($i = 0; $i < count($db); $i++ ) {
-        echo '<li>' . $db[$i]['poster'] . '</li>' . '<br/>';
-    }
-    ?>
-    
-    
     <header>
         <div id="container-header">
             <div class="logoSpotify">
@@ -36,6 +24,17 @@
                 <div class="disc">
                     <div class="cardDisc">
                         <!-- <img src="" alt=""> -->
+                        <img src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="img">
+                        <h2> New Jersey </h2>
+                        <h4> Bon Jovi </h4>
+                        <h5> 1988 </h5>
+                    </div>
+                    <div class="cardDisc">
+                        <!-- <img src="" alt=""> -->
+                        <img src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="img">
+                        <h2> New Jersey </h2>
+                        <h4> Bon Jovi </h4>
+                        <h5> 1988 </h5>
                     </div>
                 </div>
             </div>
