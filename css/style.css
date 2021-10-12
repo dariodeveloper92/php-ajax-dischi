@@ -45,20 +45,20 @@ main #container-main {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
-    background-color: hotpink;
 }
 
 main #container-main .dischi {
-    width: calc(100% / 5 - 30px);
+    width: calc(100% / 6 - 30px);
     display: flex;
     flex-direction: column;
     align-items: center;
     /* height: 500px;  */
     margin-bottom: 30px;
-    background-color: greenyellow;
+    margin-top: 20px;
+    background-color: #49515f;
     padding: 20px;
     text-align: center;
-    border: 2px solid blue;
+    color: white;
 }
 
 main #container-main .dischi img {
@@ -66,10 +66,10 @@ main #container-main .dischi img {
     height: auto;
 }
 
-/* .dischi {
+.dischi {
     width: 250px;
     height: 400px;
-} */
+} 
 
 
 
