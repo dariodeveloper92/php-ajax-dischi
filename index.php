@@ -9,22 +9,12 @@
 </head>
 
 <?php 
+    /* import database */
     include __DIR__ . '/database.php';
-        
-        foreach($db as $key => $poster) {
-            echo '<img>' . 'poster: ' . $poster['poster'] . ':'  . '</h5>';
-            echo '<h2>' . 'title: ' . $poster['title'] . ':'  . '</h2>';
-            echo '<h4>' . 'author: ' . $poster['author'] . ':'  . '</h4>';
-            echo '<h5>' . 'year: ' . $poster['year'] . ':'  . '</h5>';
-        }
-            
-
+    
 ?>
 
 <body>
-
-    
-
     <header>
         <div id="container-header">
             <div class="logoSpotify">
@@ -36,29 +26,21 @@
     </header>
     <main>
         <section id="container-main">
-            <div class="box-dischi">
-                <div class="disc">
-                    <div class="cardDisc">
-                        <!-- <img src="" alt=""> -->
-                        <img src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="img">
-                        <h2> New Jersey </h2>
-                        <h4> Bon Jovi </h4>
-                        <h5> 1988 </h5>
-                    </div>
-                    <div class="cardDisc">
-                        <?php 
-                            include __DIR__ . '/database.php';
-                                foreach($db as $key => $poster) {
-                                    echo '<img>' . $poster['poster'] ;
-                                    echo '<h2>' . 'title: ' . $poster['title'] . ':'  . '</h2>';
-                                    echo '<h4>' . 'author: ' . $poster['author'] . ':'  . '</h4>';
-                                    echo '<h5>' . 'year: ' . $poster['year'] . ':'  . '</h5>';
-                                }
-                            ?>
-                    </div>
-                </div>
+            <div class="dischi">
+                <?php 
+                    foreach($db as $key => $disc) {
+                        echo '<img src=' . $disc['poster'] .'>' ;
+                        echo '<h2>' . 'title: ' . $disc['title'] . ':'  . '</h2>';
+                        echo '<h4>' . 'author: ' . $disc['author'] . ':'  . '</h4>';
+                        echo '<h5>' . 'year: ' . $disc['year'] . ':'  . '</h5>';
+                    }
+                ?>
             </div>
         </section>
+        
     </main>
 </body>
 </html>
+
+
+    
