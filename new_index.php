@@ -47,9 +47,9 @@
         <!-- main -->
         <main>
             <section id="container-main">
-                <div class="disc text-center">
+                <div class="dischi text-center">
                     <div v-for="(album, index) in albumList" :key="index" class="album">
-                        <img class="img-fluid mb-3" :src="album.poster" :alt="album.name">
+                        <img class="img-dischi" :src="album.poster" :alt="album.poster">
                         <h2> {{ album.title }} </h2>
                         <h4> {{ album.author }} </h4>
                         <h5> {{ album.year }} </h5>
