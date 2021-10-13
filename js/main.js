@@ -3,11 +3,12 @@ const app = new VTTCue({
     data: {
 
     },
+    /* chiamata axios */
     created() {
         axios
-            .get('http://localhost/live_coding/json_exercise/api/server.php')
+            .get('http://http://localhost/php-ajax-dischi/api/server.php')
             .then((response) => {
-                console.log(response.data[0].surname);
+                console.log(response.data[0]);
             })
     }
 })

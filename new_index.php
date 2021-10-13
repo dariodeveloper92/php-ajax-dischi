@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- import bue js -->
     <script src="http://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js" ></script> -->
+    <!-- import cdnjs  axios-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js" integrity="sha512-Idr7xVNnMWCsgBQscTSCivBNWWH30oo/tzYORviOCrLKmBaRxRflm2miNhTFJNVmXvCtzgms5nlJF4az2hiGnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>PHP-VueJs Dischi</title>
 </head>
 <?php 
