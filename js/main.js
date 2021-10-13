@@ -9,8 +9,7 @@ const app = new Vue({
             .get('api/server.php')
             .then((response) => {
                 this.albumList = response.data;
-                // console.log(this.albumList);
-                console.log(response);
+               console.log(response);
             })
     }
 })

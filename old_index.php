@@ -12,7 +12,6 @@
 <?php 
     /* import database */
     include __DIR__ . '/data/database.php';
-    
 ?>
 
 <body>
@@ -53,6 +52,7 @@
             ?>
         </section>
     </main>
+    
 </body>
 </html>
 

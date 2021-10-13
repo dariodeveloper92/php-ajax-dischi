@@ -10,14 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- import css -->
     <link rel="stylesheet" href="./css/style.css">
-    
     <title>PHP-VueJs Dischi</title>
 </head>
 <?php 
     /* import database */
     include __DIR__ . '/data/database.php';
-    //include __DIR__ . '/api/server.php';
-    
 ?>
 <body>
     <div id="root" class="container">
