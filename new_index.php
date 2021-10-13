@@ -23,11 +23,43 @@
 ?>
 <body>
     <div id="root" class="container">
+        <!-- header -->
+        <header>
+            <div id="container-header">
+                <div class="logoSpotify">
+                    <a href="#">
+                        <img src="./img/spotify-logo.svg" alt="Spotify logo">
+                    </a>
+                    <a class="label_search" href="#">
+                        <div class="search">
+                            <label for="type"> </label>
+                            <select name="type" id="type" >
+                                <option value=""> Scegli il tuo genere</option>
+                                <option> pop </option>
+                                <option> jazz </option>
+                                <option> metal </option>
+                            </select>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- main -->
+        <main>
+            <section id="container-main">
+                <div class="disc text-center">
+                    <div v-for="(album, index) in albumList" :key="index" class="album">
+                        <img class="img-fluid mb-3" :src="album.poster" :alt="album.name">
+                        <h2> {{ album.title }} </h2>
+                        <h4> {{ album.author }} </h4>
+                        <h5> {{ album.year }} </h5>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 
-    </div>    
-
-    <h1>ciao</h1>
-
+    <!-- import js -->
     <script src="js/main.js"></script>
 </body>
 </html>
