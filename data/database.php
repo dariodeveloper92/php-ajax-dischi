@@ -71,4 +71,9 @@
             "year" => "1987"
         ]
     ];
+
+    echo '<pre>';
+    echo json_encode($db);
+    var_dump($db);
+    echo '</pre>';
 ?>

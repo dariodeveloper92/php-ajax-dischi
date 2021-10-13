@@ -7,4 +7,5 @@
 
     // Invio la risposta
     echo json_encode($db);
+    var_dump($db);
 ?>
