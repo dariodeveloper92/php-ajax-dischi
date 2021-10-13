@@ -6,9 +6,9 @@ const app = new VTTCue({
     /* chiamata axios */
     created() {
         axios
-            .get('http://http://localhost/php-ajax-dischi/api/server.php')
+            .get('http://localhost/php-ajax-dischi/api/server.php')
             .then((response) => {
-                console.log(response.data[0]);
+                console.log(response);
             })
     }
 })
