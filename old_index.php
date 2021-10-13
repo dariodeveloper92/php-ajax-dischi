@@ -10,7 +10,7 @@
 
 <?php 
     /* import database */
-    include __DIR__ . '/database.php';
+    include __DIR__ . '/data/database.php';
     
 ?>
 
@@ -20,7 +20,18 @@
         <div id="container-header">
             <div class="logoSpotify">
                 <a href="#">
-                <img src="./img/spotify-logo.svg" alt="Spotify logo">
+                    <img src="./img/spotify-logo.svg" alt="Spotify logo">
+                </a>
+                <a class="label_search" href="#">
+                    <div class="search">
+                        <label for="type"> </label>
+                        <select name="type" id="type" >
+                            <option value=""> Scegli il tuo genere</option>
+                            <option> pop </option>
+                            <option> jazz </option>
+                            <option> metal </option>
+                        </select>
+                    </div>
                 </a>
             </div>
         </div>
@@ -40,7 +51,6 @@
                 }
             ?>
         </section>
-        
     </main>
 </body>
 </html>
